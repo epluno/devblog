@@ -74,9 +74,9 @@ module.exports = {
 
   deploy: {
     // Server IP ie: root@192.168.0.1 OR ServerName if you use agentforwarding
-    remote: '',
+    remote: 'root@68.183.157.123',
     // Path to web root ie: /var/www/html
-    root: '',
+    root: '/home/runcloud/webapps/lifeindev',
     exclude: [
       // Excluding files/folders inside of the _site folder
       '.DS_Store',
