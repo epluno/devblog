@@ -1,5 +1,5 @@
 module.exports = {
-  port: 4000,
+  port: 2020,
 
   tasks: {
     browsersync: true,
@@ -8,7 +8,7 @@ module.exports = {
     sass: true,
     watch: true,
     webpack: true,
-    deploy: false,
+    deploy: false
   },
 
   assets: './assets',
@@ -24,43 +24,43 @@ module.exports = {
       // "Safari",
       // "Opera",
       // "Opera Developer",
-    ],
+    ]
   },
 
   eslintLoader: {
     enforce: 'pre',
     test: /\.js$/,
     exclude: /node_modules/,
-    loader: 'eslint-loader',
+    loader: 'eslint-loader'
   },
 
   imagemin: {
     src: '_images',
     dest: 'images',
     progressive: true,
-    svgoPlugins: [{ removeViewBox: false }],
+    svgoPlugins: [ { removeViewBox: false } ]
   },
 
   jekyll: {
     config: {
       default: '_config.yml',
       development: '_config_development.yml',
-      production: '',
+      production: ''
     },
     dest: '_site',
-    data: '_data',
+    data: '_data'
   },
 
   js: {
     src: '_js',
     dest: 'js',
-    entry: ['bundle.js'],
+    entry: [ 'bundle.js' ]
   },
 
   sass: {
     src: '_sass',
     dest: 'css',
-    outputStyle: 'compressed', //nested, expanded, compact, compressed
+    outputStyle: 'compressed' //nested, expanded, compact, compressed
   },
 
   webpack: {
@@ -68,22 +68,22 @@ module.exports = {
     // makes debuggin easier - options found -> https://webpack.js.org/configuration/devtool/
     devtool: 'source-map',
     module: {
-      rules: [],
-    },
+      rules: []
+    }
   },
 
   deploy: {
     // Server IP ie: root@192.168.0.1 OR ServerName if you use agentforwarding
-    remote: '',
+    remote: 'root@68.183.157.123',
     // Path to web root ie: /var/www/html
-    root: '',
+    root: '/home/runcloud/webapps/lifeindev',
     exclude: [
       // Excluding files/folders inside of the _site folder
       '.DS_Store',
       '*.lock',
-      '.git',
+      '.git'
     ],
     // set to false if deploying to production
-    dryrun: true,
-  },
+    dryrun: true
+  }
 };

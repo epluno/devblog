@@ -13,14 +13,15 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: 'Flightdeck: A Scaffold for Jekyll'
-email: client-email@client_domain.com
+title: 'Life in Web Development'
+email: devteam@epluno.com
 description: >
-  Flightdeck is a scaffold and starter project for Jekyll that uses an opinionated modern front-end workflow.
+  Just a blog about by some 🤓 at epluno.
 baseurl: '' # the subpath of your site, e.g. /blog
-url: '' # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: ginfuru
-github_username: ginfuru
+url: 'https://lifeinweb.dev' # the base hostname & protocol for your site, e.g. http://example.com
+
+twitter_username: lifeinwebdev
+github_username: epluno
 
 # SEO
 #image: /assets/images/open_graph_image.png
@@ -28,7 +29,7 @@ gaCode: # UA-XXXXXXXX-XX
 
 # Build settings
 markdown: kramdown
-incremental: true
+incremental: false
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
